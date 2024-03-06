@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v5.19.2.
+ * Original file: /npm/in@0.19.0/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+module.exports=require("./lib/in"),module.exports.sortByDependencies=require("./lib/sortByDependencies");
+//# sourceMappingURL=/sm/a498a2fcd59870ce02d9c8caa9d7140a2b435a50c58ca70d1a68833e942dbb9f.map

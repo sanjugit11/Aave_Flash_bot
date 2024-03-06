@@ -1,0 +1,63 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockPeripheryContractV2",
+  "sourceName": "contracts/contractsAave/mocks/helpers/MockPeripheryContract.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getAddressesProvider",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getManager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addressesProvider",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newManager",
+          "type": "address"
+        }
+      ],
+      "name": "setManager",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610153806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063c4d66de814610051578063d0ebdbe714610083578063d5009584146100b3578063fe65acfe146100dc575b600080fd5b61008161005f3660046100ed565b600280546001600160a01b0319166001600160a01b0392909216919091179055565b005b6100816100913660046100ed565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000546001600160a01b03165b6040516001600160a01b03909116815260200160405180910390f35b6002546001600160a01b03166100c0565b6000602082840312156100ff57600080fd5b81356001600160a01b038116811461011657600080fd5b939250505056fea26469706673582212209686d5172e9559d683f51fd22eba98749576f93b1cca9e99f6b48cab15b37f3b64736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c8063c4d66de814610051578063d0ebdbe714610083578063d5009584146100b3578063fe65acfe146100dc575b600080fd5b61008161005f3660046100ed565b600280546001600160a01b0319166001600160a01b0392909216919091179055565b005b6100816100913660046100ed565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000546001600160a01b03165b6040516001600160a01b03909116815260200160405180910390f35b6002546001600160a01b03166100c0565b6000602082840312156100ff57600080fd5b81356001600160a01b038116811461011657600080fd5b939250505056fea26469706673582212209686d5172e9559d683f51fd22eba98749576f93b1cca9e99f6b48cab15b37f3b64736f6c634300080a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,34 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockIncentivesController",
+  "sourceName": "contracts/contractsAave/mocks/helpers/MockIncentivesController.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "handleAction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060b48061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806331873e2e14602d575b600080fd5b603d6038366004603f565b505050565b005b600080600060608486031215605357600080fd5b83356001600160a01b0381168114606957600080fd5b9560208501359550604090940135939250505056fea26469706673582212204e045957539de27f547e6b66a98f8473929454577e0fc10913443a2128c0279964736f6c634300080a0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806331873e2e14602d575b600080fd5b603d6038366004603f565b505050565b005b600080600060608486031215605357600080fd5b83356001600160a01b0381168114606957600080fd5b9560208501359550604090940135939250505056fea26469706673582212204e045957539de27f547e6b66a98f8473929454577e0fc10913443a2128c0279964736f6c634300080a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

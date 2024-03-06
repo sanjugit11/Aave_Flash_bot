@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/UniswapV2Library.sol": "UniswapV2Library"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IUniswapV2Factory.sol": {
+			"keccak256": "0x9a57a9b55d9c581896d23386107c20dc9b3afed0eb1aa13fb905672065dc5731",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://56badf5f376534df88ae49d86196c6d7afbe0e26777ac1cc969c5931a0cd6679",
+				"dweb:/ipfs/QmdThSwz3RJn1ACHrs2WAFi7LLEQn2K88yQ25mUYi4y3sR"
+			]
+		},
+		"contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x5fdf7aa8e5fda3bc6afafd4091f9749c2e6921dd929ccd725e5b50e49dece080",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f767ae941cc9d435ed7a19c31b7f1c8d98968a1beee54fae836681404da0f9c",
+				"dweb:/ipfs/QmPyA8uQwh5nR7gFBVz9QRMnwvTcbNXQJYCweYCgqhdza4"
+			]
+		},
+		"contracts/libraries/SafeMath.sol": {
+			"keccak256": "0x5a88a8d0b4b7619351847da1a87b32b7ef0ec045c6855aa737a91b44d9de7491",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://608764a38b8bfd1e1d4ddfd0cde5403ac22b91bc927d7518dd8635a5a708a020",
+				"dweb:/ipfs/QmTCKEyScYofrGVoZ11GEkRo9LrsWzrZFBTJKtpPjkRTdk"
+			]
+		},
+		"contracts/libraries/UniswapV2Library.sol": {
+			"keccak256": "0xd2f8b248fbe6d223ff8ebe1e3124b6f44e160d7595b6e4c584616a688bd47ee3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://620c73175a110f777fd981d96f3ea1729100ebcf9adbf3a1b0c2ae7de1a13d92",
+				"dweb:/ipfs/QmdeCcnhQTyzXNFxABCFUnn7EfDx1SV7HLp29t5dver9nh"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/UniswapV2OracleLibrary.sol": "UniswapV2OracleLibrary"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x5fdf7aa8e5fda3bc6afafd4091f9749c2e6921dd929ccd725e5b50e49dece080",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f767ae941cc9d435ed7a19c31b7f1c8d98968a1beee54fae836681404da0f9c",
+				"dweb:/ipfs/QmPyA8uQwh5nR7gFBVz9QRMnwvTcbNXQJYCweYCgqhdza4"
+			]
+		},
+		"contracts/libraries/UniswapV2OracleLibrary.sol": {
+			"keccak256": "0x48add209ad7d3df9928f9ed6a82d4fec2a1e9786b03a50a4830b518069b9620c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://064e9f5972869a0db141dd68aaa4666d899b790030cf1860e28a6d319a24bb2d",
+				"dweb:/ipfs/QmTiMcgbtojPfjQmd8GikYKEcvh5TMGZAQRajLRYH1E6wn"
+			]
+		}
+	},
+	"version": 1
+}

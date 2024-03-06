@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v3.14.1.
+ * Original file: /npm/interface@1.2.1/index.js
+ * 
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+function createInterface(){var e=Array.prototype.slice.call(arguments);function t(){var r=this.constructor;if(r===t)throw new Error("Cannot create an instance of Interface");for(var n=Object.getPrototypeOf(this),o=[],c=0;c<e.length;c++)"function"!=typeof n[e[c]]&&o.push(e[c]);if(o.length)throw new Error("The following function(s) need to be implemented for class "+r.name+": "+o.join(", "))}return t.isImplementedBy=function(t){for(var r=Object.getPrototypeOf(t),n=!0,o=0;o<e.length;o++)if("function"!=typeof r[e[o]]){n=!1;break}return n},t}createInterface.create=createInterface,module.exports=createInterface;
+//# sourceMappingURL=/sm/b2362d0eef4ba24fb1053eac7400adc89c865ede7cd3767583c0dcb2b3ee2433.map

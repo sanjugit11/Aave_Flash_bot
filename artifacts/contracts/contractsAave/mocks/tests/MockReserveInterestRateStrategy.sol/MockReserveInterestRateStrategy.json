@@ -1,0 +1,336 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MockReserveInterestRateStrategy",
+  "sourceName": "contracts/contractsAave/mocks/tests/MockReserveInterestRateStrategy.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IPoolAddressesProvider",
+          "name": "provider",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "optimalUsageRatio",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "baseVariableBorrowRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "variableRateSlope1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "variableRateSlope2",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stableRateSlope1",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stableRateSlope2",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ADDRESSES_PROVIDER",
+      "outputs": [
+        {
+          "internalType": "contract IPoolAddressesProvider",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_EXCESS_STABLE_TO_TOTAL_DEBT_RATIO",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_EXCESS_USAGE_RATIO",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "OPTIMAL_STABLE_TO_TOTAL_DEBT_RATIO",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "OPTIMAL_USAGE_RATIO",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "unbacked",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "liquidityAdded",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "liquidityTaken",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalStableDebt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalVariableDebt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "averageStableBorrowRate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserveFactor",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "reserve",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "aToken",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct DataTypes.CalculateInterestRatesParams",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "name": "calculateInterestRates",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "liquidityRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stableBorrowRate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "variableBorrowRate",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBaseStableBorrowRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBaseVariableBorrowRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getMaxVariableBorrowRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getStableRateExcessOffset",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getStableRateSlope1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getStableRateSlope2",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVariableRateSlope1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getVariableRateSlope2",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "liquidityRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "setLiquidityRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "stableBorrowRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "setStableBorrowRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "variableBorrowRate",
+          "type": "uint256"
+        }
+      ],
+      "name": "setVariableBorrowRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x61016060405234801561001157600080fd5b506040516105d13803806105d183398101604081905261003091610061565b6080959095526001600160a01b0390951660a05260c09290925260e0526101005261012091909152610140526100ca565b600080600080600080600060e0888a03121561007c57600080fd5b87516001600160a01b038116811461009357600080fd5b602089015160408a015160608b015160808c015160a08d015160c0909d0151949e939d50919b909a50909850965090945092505050565b60805160a05160c05160e0516101005161012051610140516104986101396000396000610186015260006102840152600081816102aa01526102d201526000818161015601526102f60152600081816101ac015261031701526000610115015260006101ea01526104986000f3fe608060405234801561001057600080fd5b506004361061010b5760003560e01c8063a5898709116100a2578063bc62690811610071578063bc62690814610268578063cecced511461026f578063d5cd739114610282578063f4202409146102a8578063fe5fd6981461020c57600080fd5b8063a58987091461021c578063a9c622f81461020c578063aa16fe3414610255578063acd786861461026857600080fd5b80633a244adf116100de5780633a244adf146101d057806354c365c6146101e55780636fb925891461020c57806380031e371461021457600080fd5b80630542975c146101105780630b3429a21461015457806314e32da41461018457806334762ca5146101aa575b600080fd5b6101377f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b7f00000000000000000000000000000000000000000000000000000000000000005b60405190815260200161014b565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b6101e36101de36600461034a565b600055565b005b6101767f000000000000000000000000000000000000000000000000000000000000000081565b610176600081565b6101766102ce565b61023a61022a3660046103b7565b6000546001546002549193909250565b6040805193845260208401929092529082015260600161014b565b6101e361026336600461034a565b600255565b6000610176565b6101e361027d36600461034a565b600155565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b60007f000000000000000000000000000000000000000000000000000000000000000061033b7f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000000000000000000000000000000000000000000061043c565b610345919061043c565b905090565b60006020828403121561035c57600080fd5b5035919050565b604051610120810167ffffffffffffffff8111828210171561039557634e487b7160e01b600052604160045260246000fd5b60405290565b80356001600160a01b03811681146103b257600080fd5b919050565b600061012082840312156103ca57600080fd5b6103d2610363565b823581526020830135602082015260408301356040820152606083013560608201526080830135608082015260a083013560a082015260c083013560c082015261041e60e0840161039b565b60e082015261010061043181850161039b565b908201529392505050565b6000821982111561045d57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212206c5e71784a577a66b2d417e6592882cec69c87c6e34ff2392f5f062ee2293d3564736f6c634300080a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061010b5760003560e01c8063a5898709116100a2578063bc62690811610071578063bc62690814610268578063cecced511461026f578063d5cd739114610282578063f4202409146102a8578063fe5fd6981461020c57600080fd5b8063a58987091461021c578063a9c622f81461020c578063aa16fe3414610255578063acd786861461026857600080fd5b80633a244adf116100de5780633a244adf146101d057806354c365c6146101e55780636fb925891461020c57806380031e371461021457600080fd5b80630542975c146101105780630b3429a21461015457806314e32da41461018457806334762ca5146101aa575b600080fd5b6101377f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b7f00000000000000000000000000000000000000000000000000000000000000005b60405190815260200161014b565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b6101e36101de36600461034a565b600055565b005b6101767f000000000000000000000000000000000000000000000000000000000000000081565b610176600081565b6101766102ce565b61023a61022a3660046103b7565b6000546001546002549193909250565b6040805193845260208401929092529082015260600161014b565b6101e361026336600461034a565b600255565b6000610176565b6101e361027d36600461034a565b600155565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b7f0000000000000000000000000000000000000000000000000000000000000000610176565b60007f000000000000000000000000000000000000000000000000000000000000000061033b7f00000000000000000000000000000000000000000000000000000000000000007f000000000000000000000000000000000000000000000000000000000000000061043c565b610345919061043c565b905090565b60006020828403121561035c57600080fd5b5035919050565b604051610120810167ffffffffffffffff8111828210171561039557634e487b7160e01b600052604160045260246000fd5b60405290565b80356001600160a01b03811681146103b257600080fd5b919050565b600061012082840312156103ca57600080fd5b6103d2610363565b823581526020830135602082015260408301356040820152606083013560608201526080830135608082015260a083013560a082015260c083013560c082015261041e60e0840161039b565b60e082015261010061043181850161039b565b908201529392505050565b6000821982111561045d57634e487b7160e01b600052601160045260246000fd5b50019056fea26469706673582212206c5e71784a577a66b2d417e6592882cec69c87c6e34ff2392f5f062ee2293d3564736f6c634300080a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

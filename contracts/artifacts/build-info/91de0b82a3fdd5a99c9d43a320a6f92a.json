@@ -1,0 +1,72 @@
+{
+	"id": "91de0b82a3fdd5a99c9d43a320a6f92a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.10",
+	"solcLongVersion": "0.8.10+commit.fc410830",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/AaveRealContract.sol": {
+				"content": "// // SPDX-License-Identifier: MIT\n// pragma solidity 0.8.10;\n\n// import \"https://github.com/aave/aave-v3-core/blob/master/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol\";\n// import \"https://github.com/aave/aave-v3-core/blob/master/contracts/interfaces/IPoolAddressesProvider.sol\";\n// import \"https://github.com/aave/aave-v3-core/blob/master/contracts/dependencies/openzeppelin/contracts/IERC20.sol\";\n\n// contract SimpleFlashLoan is FlashLoanSimpleReceiverBase {\n//     address payable owner;\n\n//     constructor(address _addressProvider)\n//         FlashLoanSimpleReceiverBase(IPoolAddressesProvider(_addressProvider))\n//     {\n//     }\n\n//     function fn_RequestFlashLoan(address _token, uint256 _amount) public {\n//         address receiverAddress = address(this);\n//         address asset = _token;\n//         uint256 amount = _amount;\n//         bytes memory params = \"\";\n//         uint16 referralCode = 0;\n\n//         POOL.flashLoanSimple(\n//             receiverAddress,\n//             asset,\n//             amount,\n//             params,\n//             referralCode\n//         );\n//     }\n    \n//         //This function is called after your contract has received the flash loaned amount\n\n//     function  executeOperation(\n//         address asset,\n//         uint256 amount,\n//         uint256 premium,\n//         address initiator,\n//         bytes calldata params\n//     )  external override returns (bool) {\n        \n//         //Logic goes here\n        \n//         uint256 totalAmount = amount + premium;\n//         IERC20(asset).approve(address(POOL), totalAmount);\n\n//         return true;\n//     }\n\n//     receive() external payable {}\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.10;\"\n--> contracts/AaveRealContract.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.10;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/AaveRealContract.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/AaveRealContract.sol": {
+				"ast": {
+					"absolutePath": "contracts/AaveRealContract.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "1669:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
